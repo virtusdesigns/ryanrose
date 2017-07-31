@@ -14,139 +14,6 @@
   src: url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Light.woff2') format('woff2'), url('../fonts/ProximaNova-Light.woff') format('woff'), url('../fonts/ProximaNova-Light.ttf') format('truetype'), url('../fonts/ProximaNova-Light.svg') format('svg');
 }
 
-
-.tb-scroll-to-section {
-	background-image: url('https://virtusdesigns.com/wp-content/uploads/2016/08/arrow.png');
-	background-size: 80% auto;
-}
-.arrow {
-	margin-bottom: 4vw;
-}
-
-.fade-in {
-	opacity: 0;
-	transform: scale(.5);
-	transition: opacity .8s ease-in-out, transform .8s ease-in-out;
-	-webkit-transition-delay: 0.5s;
-    transition-delay: 0.5s;
-}
-.visible .fade-in,
-.fade-in.visible {
-	opacity: 1;
-	transform: scale(1);
-	transition: opacity .8s ease-in-out, transform .8s ease-in-out;
-	-webkit-transition-delay: 0.5s;
-    transition-delay: 0.5s;
-}
-.slide-up {
-	opacity: 0;
-	transform: translateY(150px);
-	transition: opacity .8s ease-in-out, transform .8s ease-in-out;
-	-webkit-transition-delay: 1s;
-    transition-delay: 1s;
-}
-.visible .slide-up,
-.slide-up.visible {
-	opacity: 1;
-	transform: translateY(0px);
-	transition: opacity .8s ease-in-out, transform .8s ease-in-out;
-	-webkit-transition-delay: 1s;
-    transition-delay: 1s;
-}
-.virtus-arrow {
-	width: 47.619%;
-	opacity: 0;
-	transform: translateY(-150px);
-	transition: opacity .8s ease-in-out, transform .8s ease-in-out;
-	-webkit-transition-delay: 3s;
-	transition-delay: 3s;
-}
-.visible .virtus-arrow,
-.virtus-arrow.visible {
-	opacity: 1;
-	transform: translateY(0px);
-	transition: opacity .8s ease-in-out, transform .8s ease-in-out;
-	-webkit-transition-delay: 3s;
-	transition-delay: 3s;
-
-}
-.slide-left {
-	opacity: 0;
-	transform: translateX(150px);
-	transition: opacity .8s ease-in-out, transform .8s ease-in-out;
-	-webkit-transition-delay: 1s;
-    transition-delay: 1s;
-}
-.visible .slide-left,
-.slide-left.visible {
-	opacity: 1;
-	transform: translateX(0px);
-	transition: opacity .8s ease-in-out, transform .8s ease-in-out;
-	-webkit-transition-delay: 1s;
-    transition-delay: 1s;
-}
-.virtue {
-	width: 20.595%;
-	margin-left: 1%;
-	margin-top: 0.3em;
-	opacity: 0;
-	transform: translateX(-150px);
-	transition: opacity .8s ease-in-out, transform .8s ease-in-out;
-	-webkit-transition-delay: 1.5s;
-    transition-delay: 1.5s;
-    float: left;
-}
-.visible .virtue,
-.virtue.visible {
-	opacity: 1;
-	transform: translateX(0px);
-	transition: opacity .8s ease-in-out, transform .8s ease-in-out;
-	-webkit-transition-delay: 1.5s;
-    transition-delay: 1.5s;
-}
-.excellence {
-	width: 39.047%;
-	margin-left: 1%;
-	margin-top: 0.3em;
-	opacity: 0;
-	transform: translateX(-150px);
-	transition: opacity .8s ease-in-out, transform .8s ease-in-out;
-	-webkit-transition-delay: 2s;
-    transition-delay: 2s;
-    float: left;
-}
-.visible .excellence,
-.excellence.visible {
-	opacity: 1;
-	transform: translateX(0px);
-	transition: opacity .8s ease-in-out, transform .8s ease-in-out;
-	-webkit-transition-delay: 2s;
-    transition-delay: 2s;
-    float: left;
-}
-.character {
-	width: 35.714%;
-	margin-left: 2%;
-	margin-top: 0.3em;
-	opacity: 0;
-	transform: translateX(-150px);
-	transition: opacity .8s ease-in-out, transform .8s ease-in-out;
-	-webkit-transition-delay: 2.5s;
-    transition-delay: 2.5s;
-    float: left;
-}
-.visible .character,
-.character.visible {
-	opacity: 1;
-	transform: translateX(0px);
-	transition: opacity .8s ease-in-out, transform .8s ease-in-out;
-	-webkit-transition-delay: 2.5s;
-    transition-delay: 2.5s;
-}
-
-
-
-
 body {
 	font-family: 'ProximaNovaSemibold';
 	background-image: url('../images/splash-2.jpg');
@@ -158,7 +25,23 @@ body {
 	font-size: 14px;
 	-webkit-font-smoothing: antialiased;
 }
-
+iframe#no-target {
+	position: absolute;
+	height: 0;
+	width: 0;
+}
+::-webkit-input-placeholder {
+  color: #cecece;
+}
+::-moz-placeholder {
+  color: #cecece;
+}
+:-ms-input-placeholder {
+  color: #cecece;
+}
+:-moz-placeholder {
+  color: #cecece;
+}
 #title {
 	position: fixed;
 	left: 50%;
@@ -181,8 +64,6 @@ body {
 	-o-transform: translateX(-50%);
 	width: 246px;
 }
-
-
 #newsletter-bg {
 	opacity: 0;
 	background: rgba(0,0,0,.6);
@@ -213,15 +94,12 @@ body {
 	-ms-transform: translate3D(-50%, 0, 0);
 	-o-transform: translate3D(-50%, 0, 0);
 }
-
-
 .load #newsletter-bg.open {
 	opacity: 1;
 	transition: opacity .5s ease-in-out;
 	-webkit-transition-delay: 0s;
 	transition-delay: 0s;
 }
-
 .load #newsletter.open {
 	opacity: 1;
 	transform: translate3D(-50%, -50%, 0);
@@ -233,9 +111,6 @@ body {
 	-webkit-transition-delay: 0.5s;
 	transition-delay: 0.5s;
 }
-
-
-
 #newsletter p {
 	font-size: 1em;
 	color: #bcbcbc;
@@ -249,45 +124,22 @@ body {
 	width: 410px;
 	margin-left: -5px;
 }
-::-webkit-input-placeholder {
-  color: #cecece;
-}
-::-moz-placeholder {
-  color: #cecece;
-}
-:-ms-input-placeholder {
-  color: #cecece;
-}
-:-moz-placeholder {
-  color: #cecece;
-}
-
-#newsletter-name {
+#signup-email {
 	display: block;
 	position: relative;
-	width: 241px;
-	height: 41px;
+	width: 239px;
+	height: 39px;
 	border: 2px solid #e09410;
 	float: left;
 	text-align: center;
 	outline: none;
 	color: #8f8f8f;
 	text-transform: uppercase;
-}
-#newsletter-name #signup-name {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 239px;
-	height: 39px;
-	border: none;
-	text-align: center;
 	outline: none;
-	color: #8f8f8f;
 	font-weight: bold;
 	text-transform: uppercase;
 }
-#newsletter-submit {
+#signup-submit {
 	display: block;
 	position: relative;
 	background: #ffffff;
@@ -297,47 +149,27 @@ body {
 	float: left;
 	color: #ffffff;
 	font-weight: bold;
-}
-#newsletter-submit #signup-submit {
-	position: absolute;
-	right: 0;
-	width: 100%;
-	color: white;
-	font-weight: bold;
-	z-index: 99;
-	background: none;
-	height: 45px;
-	padding: 0;
 	border: 2px solid #e09410;
 	border-left: 0;
+	background-color: #ffffff;
+	background-image: url('../images/button-bg.png');
+	background-size: 100% 100%;
+	background-position: left top;
+	background-repeat: no-repeat;
+	transition: background-size .3s ease-in-out 0s, color .2s ease-in-out .1s;
+	-moz-transition: background-size .3s ease-in-out 0s, color .2s ease-in-out .1s;
+	-webkit-transition: background-size .3s ease-in-out 0s, color .2s ease-in-out .1s;
+	-ms-transition: background-size .3s ease-in-out 0s, color .2s ease-in-out .1s;
+	-o-transition: background-size .3s ease-in-out 0s, color .2s ease-in-out .1s;
 }
-#newsletter-submit #signup-submit:hover {
+#signup-submit:hover {
 	color: #e09410;
-}
-#newsletter-submit:after {
-	content: "";
-	display: block;
-	background: #e09410;
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	left: 0;
-	transition: width .3s ease-in-out 0s;
-	-moz-transition: width .3s ease-in-out 0s;
-	-webkit-transition: width .3s ease-in-out 0s;
-	-ms-transition: width .3s ease-in-out 0s;
-	-o-transition: width .3s ease-in-out 0s;
-}
-#newsletter-submit:hover {
-	color: #e09410;
-}
-#newsletter-submit:hover:after {
-	width: 0%;
-	transition: width .3s ease-in-out 0s;
-	-moz-transition: width .3s ease-in-out 0s;
-	-webkit-transition: width .3s ease-in-out 0s;
-	-ms-transition: width .3s ease-in-out 0s;
-	-o-transition: width .3s ease-in-out 0s;
+	background-size: 0% 100%;
+	transition: background-size .3s ease-in-out 0s, color .2s ease-in-out .1s;
+	-moz-transition: background-size .3s ease-in-out 0s, color .2s ease-in-out .1s;
+	-webkit-transition: background-size .3s ease-in-out 0s, color .2s ease-in-out .1s;
+	-ms-transition: background-size .3s ease-in-out 0s, color .2s ease-in-out .1s;
+	-o-transition: background-size .3s ease-in-out 0s, color .2s ease-in-out .1s;
 }
 #newsletter-close,
 #thankyou-close {
@@ -405,9 +237,6 @@ body {
 	-ms-transition: background .3s ease-in-out 0s;
 	-o-transition: background .3s ease-in-out 0s;
 }
-
-
-
 #thankyou {
 	opacity: 1;
 	background: #ffffff;
@@ -426,7 +255,18 @@ body {
 	-ms-transform: translate3D(-50%, -50%, 0);
 	-o-transform: translate3D(-50%, -50%, 0);
 }
-
+#thankyou.show {
+	opacity: 1;
+	left: 50%;
+	transform: translate3D(-50%, -50%, 0);
+	-webkit-transform: translate3D(-50%, -50%, 0);
+	-moz-transform: translate3D(-50%, -50%, 0);
+	-ms-transform: translate3D(-50%, -50%, 0);
+	-o-transform: translate3D(-50%, -50%, 0);
+	transition: left .8s ease-in-out;
+	-webkit-transition-delay: 2s;
+	transition-delay: 2s;
+}
 #thankyou.show {
 	opacity: 1;
 	left: 50%;
@@ -488,10 +328,14 @@ body {
 	#title {
 		width: 500px;
 	}
-	#newsletter,
-	#thankyou {
+	#newsletter {
 		width: 288px;
-		height: 654px;
+		height: auto;
+	}
+	#thankyou {
+		padding: 0;
+		width: 488px;
+		height: 676px;
 	}
 	#newsletter p {
 		max-width: 194px;
@@ -504,27 +348,19 @@ body {
 		width: 288px;
 		margin-left: 0;
 	}
-	#newsletter-name {
+	#signup-email {
 		display: block;
 		position: relative;
-		width: 284px;
-		height: 41px;
-		border: 2px solid #e09410;
+		width: 282px;
+		height: 48px;
+		border: 2px solid #8f8f8f;
 		float: none;
 		margin-bottom: 14px;
 	}
-	#newsletter-name #signup-name {
-		width: 282px;
-	}
-	#newsletter-submit {
+	#signup-submit {
 		width: 288px;
-		height: 41px;
-		border: none;
+		height: 54px;
 		float: none;
-	}
-	#newsletter-submit #signup-submit {
-		width: 288px;
-		height: 41px;
 		border-left: 2px solid #e09410;
 	}
 }
@@ -532,11 +368,14 @@ body {
 	#title {
 		width: 400px;
 	}
-	#newsletter,
-	#thankyou {
+	#newsletter {
 		padding: 70px 80px;
 		width: 284px;
-		height: 631px;
+	}
+	#thankyou {
+		padding: 0;
+		width: 444px;
+		height: 653px;
 	}
 	#newsletter p {
 		max-width: 194px;
@@ -545,16 +384,10 @@ body {
 	#form {
 		width: 284px;
 	}
-	#newsletter-name {
-		width: 280px;
-	}
-	#newsletter-name #signup-name {
+	#signup-email {
 		width: 278px;
 	}
-	#newsletter-submit {
-		width: 284px;
-	}
-	#newsletter-submit #signup-submit {
+	#signup-submit {
 		width: 284px;
 	}
 }
@@ -565,11 +398,14 @@ body {
 	#title {
 		width: 245px;
 	}
-	#newsletter,
-	#thankyou {
+	#newsletter {
 		padding: 40px 30px;
 		width: 200px;
-		height: 465px;
+	}
+	#thankyou {
+		padding: 0;
+		width: 260px;
+		height: 469px;
 	}
 	#newsletter p {
 		font-size: 1em;
@@ -579,17 +415,13 @@ body {
 	#form {
 		width: 200px;
 	}
-	#newsletter-name {
-		width: 196px;
-	}
-	#newsletter-name #signup-name {
+	#signup-email {
 		width: 194px;
+		height: 39px;
 	}
-	#newsletter-submit {
-		width: 196px;
-	}
-	#newsletter-submit #signup-submit {
-		width: 194px;
+	#signup-submit {
+		width: 200px;
+		height: 45px;
 	}
 	#newsletter-close {
 		width: 40px;

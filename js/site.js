@@ -12,14 +12,12 @@ jQuery(document).ready(function($){
 	    $('#newsletter').removeClass('open');
 	});
 
-	$('#signup-submit').on('click', function(){
-	    $('#newsletter').removeClass('open');
-	    $('#thankyou').addClass('show');
-	});	
 	$('#thankyou-close').on('click', function(){
 	    $('#thankyou').removeClass('show');
 	    $('#newsletter-bg').removeClass('open');
 	});
+	
+
 	
 
 	

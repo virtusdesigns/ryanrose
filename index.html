@@ -9,13 +9,6 @@
     <link href="css/styles.css" rel="stylesheet">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/site.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body>
 
@@ -27,10 +20,11 @@
 			<div id="newsletter" class="open">
 				<img class="square-logo" src="images/ryanrose-wine.svg"/>
 				<p>Keep up to date with our upcoming events and wines</p>
-				<div id="form">
-					<div id="newsletter-name"><input id="signup-name" type="text" placeholder="YOUR EMAIL" name="firstname" value="" /></div>
-					<div id="newsletter-submit"><input id="signup-submit" type="submit" name="submit" value="GET UPDATES" /></div>
-				</div>
+				<form id="form" action="" method="POST" target="no-target">
+					<input id="signup-email" placeholder="YOUR EMAIL" name="email" required>
+				  	<button id="signup-submit" type="submit">GET UPDATES</button>
+				</form>
+				<iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
 				<button id="newsletter-close" class=""><div class="bar-1"></div><div class="bar-2"></div></button></div></button>
 			</div>
 			
@@ -47,5 +41,20 @@
 			
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
    
+  <script type="text/javascript">
+  	$('#form').one('submit',function(){
+  	        var inputq1 = encodeURIComponent($('#signup-email').val());
+  	        var q1ID = "entry.2808744";
+  	
+  	        var baseURL = 'https://docs.google.com/a/ryanrosewine.com/forms/d/e/1FAIpQLScDWEZrcYpw18Kbpy2GFPb5-m1uODiKtln_foJ3x2nyllPTFA/formResponse?';
+  	        var submitRef = '&submit=Submit';
+  	        var submitURL = (baseURL + q1ID + "=" + inputq1 + submitRef);
+  	        console.log(submitURL);
+  	        $(this)[0].action=submitURL;
+  	        $('#newsletter').removeClass('open');
+  	        $('#thankyou').addClass('show');
+  	    });
+  </script>
+  
   </body>
 </html>
