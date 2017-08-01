@@ -22,15 +22,14 @@ body {
 	font-size: 14px;
 	-webkit-font-smoothing: antialiased;
 }
-input[type=text] {   
+input[type=email] {   
     /* Remove First */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-
-    /* Then Style */
-    border-radius: 0;
-    outline: none;    
+	background-clip: padding-box;
+	box-shadow: none !important;
+	border-radius: 0 !important;
 }
 #content {
 	background-image: url('../images/splash-2.jpg');
@@ -472,7 +471,7 @@ iframe#no_target {
 	#thankyou {
 		padding: 0;
 		width: 260px;
-		height: 457px;
+		height: 437px;
 	}
 	#newsletter p {
 		font-size: 1em;
@@ -485,8 +484,10 @@ iframe#no_target {
 		margin-left: -15px;
 	}
 	#signup-email {
-		width: 224px;
+		width: 226px;
 		height: 39px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 	#signup-submit {
 		width: 230px;
