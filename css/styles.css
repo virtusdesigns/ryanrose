@@ -68,11 +68,12 @@ iframe#no_target {
 	position: fixed;
 	left: 50%;
 	top: 50%;
-	transform: translate3d(-50%, -50px, 0);
-	-webkit-transform: translate3d(-50%, -50px, 0);
 	-moz-transform: translate3d(-50%, -50px, 0);;
-	-ms-transform: translate3d(-50%, -50px, 0);
-	-o-transform: translate3d(-50%, -50px, 0);
+	transform: translate3d(-50%, -20%, 0);
+	-webkit-transform: translate3d(-50%, -20%, 0);
+	-moz-transform: translate3d(-50%, -20%, 0);;
+	-ms-transform: translate3d(-50%, -20%, 0);
+	-o-transform: translate3d(-50%, -20%, 0);
 	width: 750px;
 	opacity: 0;
 }
@@ -80,11 +81,11 @@ iframe#no_target {
 	position: fixed;
 	left: 50%;
 	bottom: -4px;
-	transform: translate3d(-50%, -50px, 0);
-	-webkit-transform: translate3d(-50%, -50px, 0);
-	-moz-transform: translate3d(-50%, -50px, 0);;
-	-ms-transform: translate3d(-50%, -50px, 0);
-	-o-transform: translate3d(-50%, -50px, 0);
+	transform: translate3d(-50%, 10%, 0);
+	-webkit-transform: translate3d(-50%, 10%, 0);
+	-moz-transform: translate3d(-50%, 10%, 0);;
+	-ms-transform: translate3d(-50%, 10%, 0);
+	-o-transform: translate3d(-50%, 10%, 0);
 	width: 246px;
 	opacity: 0;
 }
@@ -139,11 +140,11 @@ iframe#no_target {
 	-o-transition: opacity .5s ease-in-out, transform .5s ease-in-out;
 	-webkit-transition-delay: 0s;
 	transition-delay: 0s;
-	transform: translate3D(-50%, 0, 0);
-	-webkit-transform: translate3D(-50%, 0, 0);
-	-moz-transform: translate3D(-50%, 0, 0);
-	-ms-transform: translate3D(-50%, 0, 0);
-	-o-transform: translate3D(-50%, 0, 0);
+	transform: translate3D(-50%, -42%, 0);
+	-webkit-transform: translate3D(-50%, -42%, 0);
+	-moz-transform: translate3D(-50%, -42%, 0);
+	-ms-transform: translate3D(-50%, -42%, 0);
+	-o-transform: translate3D(-50%, -42%, 0);
 }
 .load #newsletter-bg.open {
 	opacity: 1;
@@ -164,6 +165,21 @@ iframe#no_target {
 	-o-transition: opacity .75s ease-in-out, transform .75s ease-in-out;
 	-webkit-transition-delay:4s;
 	transition-delay: 4s;
+}
+.load #newsletter.fadeout {
+	opacity: 0;
+	transform: translate3D(-50%, -58%, 0);
+	-webkit-transform: translate3D(-50%, -58%, 0);
+	-moz-transform: translate3D(-50%, -58%, 0);
+	-ms-transform: translate3D(-50%, -58%, 0);
+	-o-transform: translate3D(-50%, -58%, 0);
+	transition: opacity .75s ease-in-out, transform .75s ease-in-out;
+	-webkit-transition: opacity .75s ease-in-out, transform .75s ease-in-out;
+	-moz-transition: opacity .75s ease-in-out, transform .75s ease-in-out;
+	-o-transition: opacity .75s ease-in-out, transform .75s ease-in-out;
+	-webkit-transition-delay:1s;
+	transition-delay: 1s;
+	-moz-transition-delay:1s;
 }
 #newsletter p {
 	font-size: 1em;
@@ -208,6 +224,8 @@ iframe#no_target {
 	float: left;
 	color: #ffffff;
 	font-size: 1em;
+	outline: none;
+	cursor: pointer;
 	//font-weight: bold;
 	border: 2px solid #e09410;
 	border-left: 0;
@@ -298,46 +316,59 @@ iframe#no_target {
 	-o-transition: background .3s ease-in-out 0s;
 }
 #thankyou {
-	opacity: 1;
+	opacity: 0;
+	z-index: -1;
 	background: #ffffff;
 	padding: 80px 100px;
 	width: 400px;
 	height: 440px;
 	position: fixed;
 	top: 50%;
-	left: -100%;
-	transition: left .8s ease-in-out;
+	left: 50%;
+	transition: opacity .8s ease-in-out, transform .8s ease-in-out;
+	-webkit-transition: opacity .8s ease-in-out, transform .8s ease-in-out;
+	-moz-transition: opacity .8s ease-in-out, transform .8s ease-in-out;
+	-o-transition: opacity .8s ease-in-out, transform .8s ease-in-out;
 	-webkit-transition-delay: 0s;
 	transition-delay: 0s;
-	transform: translate3D(-50%, -50%, 0);
-	-webkit-transform: translate3D(-50%, -50%, 0);
-	-moz-transform: translate3D(-50%, -50%, 0);
-	-ms-transform: translate3D(-50%, -50%, 0);
-	-o-transform: translate3D(-50%, -50%, 0);
+	transform: translate3D(-50%, -42%, 0);
+	-webkit-transform: translate3D(-50%, -42%, 0);
+	-moz-transform: translate3D(-50%, -42%, 0);
+	-ms-transform: translate3D(-50%, -42%, 0);
+	-o-transform: translate3D(-50%, -42%, 0);
 }
 #thankyou.show {
 	opacity: 1;
 	left: 50%;
+	z-index: 999;
 	transform: translate3D(-50%, -50%, 0);
 	-webkit-transform: translate3D(-50%, -50%, 0);
 	-moz-transform: translate3D(-50%, -50%, 0);
 	-ms-transform: translate3D(-50%, -50%, 0);
 	-o-transform: translate3D(-50%, -50%, 0);
-	transition: left .8s ease-in-out;
-	-webkit-transition-delay: 2s;
-	transition-delay: 2s;
+	transition: opacity .8s ease-in-out, transform .8s ease-in-out;
+	-webkit-transition: opacity .8s ease-in-out, transform .8s ease-in-out;
+	-moz-transition: opacity .8s ease-in-out, transform .8s ease-in-out;
+	-o-transition: opacity .8s ease-in-out, transform .8s ease-in-out;
+	-webkit-transition-delay: 3.5s;
+	transition-delay: 3.5s;
+	-moz-transition-delay: 3.5s;
 }
-#thankyou.show {
-	opacity: 1;
-	left: 50%;
-	transform: translate3D(-50%, -50%, 0);
-	-webkit-transform: translate3D(-50%, -50%, 0);
-	-moz-transform: translate3D(-50%, -50%, 0);
-	-ms-transform: translate3D(-50%, -50%, 0);
-	-o-transform: translate3D(-50%, -50%, 0);
-	transition: left .8s ease-in-out;
-	-webkit-transition-delay: 2s;
-	transition-delay: 2s;
+#thankyou.fadeout {
+	opacity: 0;
+	z-index: -1;
+	transform: translate3D(-50%, -58%, 0);
+	-webkit-transform: translate3D(-50%, -58%, 0);
+	-moz-transform: translate3D(-50%, -58%, 0);
+	-ms-transform: translate3D(-50%, -58%, 0);
+	-o-transform: translate3D(-50%, -58%, 0);
+	transition: opacity .8s ease-in-out, transform .8s ease-in-out;
+	-webkit-transition: opacity .8s ease-in-out, transform .8s ease-in-out;
+	-moz-transition: opacity .8s ease-in-out, transform .8s ease-in-out;
+	-o-transition: opacity .8s ease-in-out, transform .8s ease-in-out;
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+	-moz-transition-delay: 0s;
 }
 #thankyou .content {
 	position: absolute;
@@ -414,9 +445,9 @@ iframe#no_target {
 	#signup-email {
 		display: block;
 		position: relative;
-		width: 282px;
-		height: 48px;
-		border: 2px solid #8f8f8f;
+		width: 284px;
+		height: 50px;
+		border: 1px solid #BCBCBB;
 		float: none;
 		margin-bottom: 14px;
 		font-size: 1.125em;
@@ -451,7 +482,7 @@ iframe#no_target {
 		margin: 0 auto;
 	}
 	#signup-email {
-		width: 278px;
+		width: 280px;
 	}
 	#signup-submit {
 		width: 284px;
@@ -484,8 +515,8 @@ iframe#no_target {
 		margin-left: -15px;
 	}
 	#signup-email {
-		width: 226px;
-		height: 39px;
+		width: 228px;
+		height: 41px;
 		padding-left: 0;
 		padding-right: 0;
 	}
