@@ -263,11 +263,13 @@ iframe#no_target {
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
 	outline: none;
+	padding: 0;
 }
 #newsletter-close .bar-1,
 #thankyou-close .bar-1 {
 	width: 36px;
 	height: 1px;
+	margin: 0 auto;
 	background: #e09410;
 	transform: rotate(-45deg);
 	-webkit-transform: rotate(-45deg);
@@ -284,6 +286,7 @@ iframe#no_target {
 #thankyou-close .bar-2 {
 	width: 36px;
 	height: 1px;
+	margin: 0 auto;
 	background: #e09410;
 	transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
@@ -457,6 +460,8 @@ iframe#no_target {
 		float: none;
 		font-size: 1.125em;
 		border-left: 2px solid #e09410;
+		padding: 0;
+		line-height: 54px;
 	}
 }
 @media all and (max-width: 767px) {
@@ -522,6 +527,8 @@ iframe#no_target {
 	#signup-submit {
 		width: 230px;
 		height: 45px;
+		padding: 0;
+		line-height: 45px;
 	}
 	#newsletter-close {
 		width: 40px;
